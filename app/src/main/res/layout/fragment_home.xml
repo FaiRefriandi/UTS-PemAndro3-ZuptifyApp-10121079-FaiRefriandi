@@ -1,0 +1,151 @@
+<!-- Fa'i Refriandi - 10121079 -->
+<!-- PemAndro3 - 09/06/2024 -->
+<!-- Tugas Besar UTS -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_all"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_sambutan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/ijogelap"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingRight="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_sambutan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/medium"
+            android:padding="16dp"
+            android:text="Good Morning, Fai Refriandi!"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_avatar_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_sambutan">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp"
+            android:gravity="center">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:padding="4dp"
+                app:strokeColor="@color/ijogelap"
+                app:strokeWidth="4dp"
+                app:shapeAppearanceOverlay="@style/RoundImageView"
+                android:src="@drawable/real_profile" />
+
+            <TextView
+                android:id="@+id/tv_name_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/medium"
+                android:text="Fai Refriandi"
+                android:textColor="@color/hampirdark"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/ijogelap"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_avatar_name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/deskripsi_diri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/medium"
+                android:text="Deskripsi Diri"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/penj_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/regular"
+                android:justificationMode="inter_word"
+                android:text="Saya adalah seorang mahasiswa Jurusan Teknik Informatika di Universitas Komputer Indonesia. Saya mempunyai ketertarikan terhadap dalam dunia teknologi informasi. Saya mempunyai impian untuk menjadi pengembang aplikasi mobile."
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/medium"
+                android:text="Ketertarikan"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/penj_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/regular"
+                android:justificationMode="inter_word"
+                android:text="Saya mempunyai hobi bermain game dan berolahraga. Saya biasa bermain game dan seringkali melakukan latihan fisik berupa olahraga beladiri. Saya juga sempat beberapa kali mengikuti kompetisi game dan beladiri. Ketertarikan saya adalah mengulik tentang sistem dari game tersebut bekerja, dan mendalami tentang beladiri. Cita - cita saya adalah menjadi seorang Programmer."
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<!-- Fa'i Refriandi - 10121079 -->
+<!-- PemAndro3 - 09/06/2024 -->
+<!-- Tugas Besar UTS -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="3dp"
+    android:padding="8dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_item_daily"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/activityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/regular" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
